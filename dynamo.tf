@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "eu-west-1"
-}
-
 resource "aws_dynamodb_table" "campaigns-dynamodb-table" {
   name           = "Camps"
   billing_mode   = "PROVISIONED"
