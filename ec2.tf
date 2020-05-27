@@ -1,7 +1,8 @@
 resource "aws_instance" "ubuntu" {
-  key_name      = "tel"
+  key_name      = "terraform"
   ami           = "ami-06ce3edf0cff21f07"
   instance_type = "t2.micro"
+  security_groups = ["${aws_security_group.allow_tls.name}"]
 
   tags = {
     Name = "ubuntu"
