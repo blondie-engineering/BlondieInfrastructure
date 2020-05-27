@@ -6,3 +6,11 @@
 ### DynamoDB
 ### EC2
 ### QLDB
+
+
+```
+terraform init
+terraform plan
+terraform apply
+terraform destroy
+```
